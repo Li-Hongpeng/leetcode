@@ -72,8 +72,7 @@ package editor.cn;
 //leetcode submit region begin(Prohibit modification and deletion)
 class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        int length1 = nums1.length, length2 = nums2.length;
-        int totalLength = length1 + length2;
+        int totalLength = nums1.length+nums2.length;
         if (totalLength % 2 == 1) {
             int midIndex = totalLength / 2;
             double median = getKthElement(nums1, nums2, midIndex + 1);
